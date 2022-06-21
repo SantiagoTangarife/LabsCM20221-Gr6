@@ -20,5 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         juan.gender = Person.Gender.MALE
         juan.contactInfo.phone = "0123456789"
+
+        juan.logData()
     }
 }
