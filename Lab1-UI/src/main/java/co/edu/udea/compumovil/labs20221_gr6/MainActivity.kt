@@ -23,19 +23,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         iniciarSeleccion()
 
-
-
-
         val spinner= findViewById<Spinner>(R.id.spinnerList)
 
         var lista=resources.getStringArray(R.array.opciones)
 
         val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista)
         spinner.adapter=adaptador
-
-
-
-
 
     }
 
@@ -53,38 +46,29 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         fecha?.setText("$year/$month/$day")
     }
 
-    private fun validacion():Boolean{
-        var isvalid=true
-        val nombre=findViewById<EditText>(R.id.Name)
-        val apellido=findViewById<EditText>(R.id.LastName)
-        val nacimiento=findViewById<EditText>(R.id.etDate)
-
-        if(nombre.text.toString().isBlank()){
-            isvalid=false
-            nombre.error=getString(R.string.form_required_field)
-        }
-        if(apellido.text.toString().isBlank()){
-            isvalid=false
-            apellido.error=getString(R.string.form_required_field)
-        }
-        if(nacimiento.text.toString().isBlank()){
-            isvalid=false
-            nacimiento.error=getString(R.string.form_required_field)
-        }
-
-        return isvalid
-    }
-
      fun sig(view: View){
-        if(validacion()){
-            val intent:Intent=Intent(this,Pantalla2_Activity::class.java)
-            startActivity(intent)
-        }
+         val nombre=findViewById<EditText>(R.id.Name)
+         val apellido=findViewById<EditText>(R.id.LastName)
+         val nacimiento=findViewById<EditText>(R.id.etDate)
+//         val educationLevel = findViewById<Spinner>(R.id.spinnerList)
 
 
+         var person = Person(
+             nombre.text.toString(),
+             apellido.text.toString(),
+             Person.Gender.MALE,
+             nacimiento.text.toString(),
+             Person.EducationLevel.UNIVERSITARY,
+         )
 
-
-
+         if(person.isValid(this)){
+             val intent:Intent=Intent(this,Pantalla2_Activity::class.java)
+             startActivity(intent)
+         } else {
+             nombre.error = person.dataErrors["firstName"]
+             apellido.error = person.dataErrors["lastName"]
+             nacimiento.error = person.dataErrors["birthday"]
+         }
     }
 
     class DatePickerFragment (val listener: (year:Int, month: Int, day:Int) -> Unit):DialogFragment(),DatePickerDialog.OnDateSetListener{
