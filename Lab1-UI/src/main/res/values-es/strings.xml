@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Labs20221-Gr6</string>
     <string name="Titulo">Informacion Personal</string>
@@ -7,8 +8,8 @@
     <string name="Hombre">Hombre</string>
     <string name="Mujer">Mujer</string>
     <string name="FechaDeNacimiento">Fecha De Nacimiento</string>
-    <string name="Siguiente">Siguiente</string>
     <string name="Cambiar">Cambiar</string>
+    <string name="Siguiente">Siguiente</string>
 
     <string name="form_required_field">Campo Requerido</string>
     <string-array name="opciones">
@@ -17,8 +18,10 @@
         <item>Secundaria</item>
         <item>Universidad</item>
         <item>Otro</item>
-
     </string-array>
+
+
+
 
 
 </resources>
