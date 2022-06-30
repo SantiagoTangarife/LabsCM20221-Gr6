@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="Lab1-UI/src/main/res/layout/activity_contact_data.xml" value="0.37407407407407406" />
+        <entry key="Lab1-UI/src/main/res/drawable/ic_baseline_email_24.xml" value="0.457" />
+        <entry key="Lab1-UI/src/main/res/layout/activity_contact_data.xml" value="0.67" />
         <entry key="Lab1-UI/src/main/res/layout/activity_main.xml" value="0.37407407407407406" />
       </map>
     </option>

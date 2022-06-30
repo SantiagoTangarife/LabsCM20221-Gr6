@@ -3,7 +3,7 @@
 
     <!-- Contact Info Activity -->
     <string name="telephone">Teléfono</string>
-    <string name="adress">Dirección</string>
+    <string name="address">Dirección</string>
     <string name="email">Correo</string>
     <string name="country">País</string>
     <string name="city">Ciudad</string>
@@ -24,10 +24,10 @@
         <item>Granada</item>
         <item>Guatemala</item>
         <item>Guayana</item>
-        <item>Haití</item>
+        <item>Haiti</item>
         <item>Honduras</item>
         <item>Jamaica</item>
-        <item>México</item>
+        <item>Mexico</item>
         <item>Nicaragua</item>
         <item>Paraguay</item>
         <item>Panamá</item>
@@ -44,7 +44,7 @@
         <item>Cali</item>
         <item>Barranquilla</item>
         <item>Cartagena</item>
-        <item>Cúcuta</item>
+        <item>Cucuta</item>
         <item>Pereira</item>
         <item>Bucaramanga</item>
         <item>Valledupar</item>
@@ -60,7 +60,7 @@
         <item>Sincelejo</item>
         <item>Tunja</item>
         <item>Yopal</item>
-        <item>Ríohacha</item>
+        <item>Riohacha</item>
         <item>Florencia</item>
         <item>Quibdó</item>
         <item>Arauca</item>
@@ -69,7 +69,7 @@
         <item>Leticia</item>
         <item>Mitú</item>
         <item>Mocoa</item>
-        <item>Inírida</item>
+        <item>Inirida</item>
         <item>Puerto Carreño</item>
         <item>Bogotá</item>
     </string-array>
