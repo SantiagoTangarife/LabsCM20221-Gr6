@@ -12,6 +12,7 @@
     <string name="Siguiente">Next</string>
 
     <string name="form_required_field">Campo Requerido</string>
+    <string name="required_field">Campo Requerido</string>
 
     <string-array name="opciones">
         <item>School grade</item>

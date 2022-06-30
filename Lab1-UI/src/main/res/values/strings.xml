@@ -11,6 +11,7 @@
     <string name="Cambiar">Cambiar</string>
 
     <string name="form_required_field">Campo Requerido</string>
+    <string name="required_field">Campo Requerido</string>
     <string-array name="opciones">
         <item>Grado De Escolaridad</item>
         <item>Primaria</item>
