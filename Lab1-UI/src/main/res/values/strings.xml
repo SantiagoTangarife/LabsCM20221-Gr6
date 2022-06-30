@@ -1,3 +1,76 @@
 <resources>
     <string name="app_name">Labs20221-Gr6</string>
+
+    <!-- Contact Info Activity -->
+    <string name="telephone">Teléfono</string>
+    <string name="adress">Dirección</string>
+    <string name="email">Correo</string>
+    <string name="country">País</string>
+    <string name="city">Ciudad</string>
+    <string name="contact_info">Información de Contacto</string>
+    <string name="next">Siguiente</string>
+
+    <string-array name="latam_countries">
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Brasil</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>Guayana Francesa</item>
+        <item>Granada</item>
+        <item>Guatemala</item>
+        <item>Guayana</item>
+        <item>Haití</item>
+        <item>Honduras</item>
+        <item>Jamaica</item>
+        <item>México</item>
+        <item>Nicaragua</item>
+        <item>Paraguay</item>
+        <item>Panamá</item>
+        <item>Perú</item>
+        <item>Puerto Rico</item>
+        <item>República Dominicana</item>
+        <item>Surinam</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+
+    <string-array name="colombia_cities">
+        <item>Medellín</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Cúcuta</item>
+        <item>Pereira</item>
+        <item>Bucaramanga</item>
+        <item>Valledupar</item>
+        <item>Ibagué</item>
+        <item>Villavicencio</item>
+        <item>Santa Marta</item>
+        <item>Montería</item>
+        <item>Manizales</item>
+        <item>Pasto</item>
+        <item>Neiva</item>
+        <item>Armenia</item>
+        <item>Popayán</item>
+        <item>Sincelejo</item>
+        <item>Tunja</item>
+        <item>Yopal</item>
+        <item>Ríohacha</item>
+        <item>Florencia</item>
+        <item>Quibdó</item>
+        <item>Arauca</item>
+        <item>San Andrés</item>
+        <item>San José del Guaviare</item>
+        <item>Leticia</item>
+        <item>Mitú</item>
+        <item>Mocoa</item>
+        <item>Inírida</item>
+        <item>Puerto Carreño</item>
+        <item>Bogotá</item>
+    </string-array>
 </resources>
