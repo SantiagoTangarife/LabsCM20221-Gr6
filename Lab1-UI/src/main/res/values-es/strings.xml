@@ -21,7 +21,13 @@
         <item>Otro</item>
     </string-array>
 
-
+    <string name="telephone">Teléfono</string>
+    <string name="address">Dirección</string>
+    <string name="email">Correo</string>
+    <string name="country">País</string>
+    <string name="city">Ciudad</string>
+    <string name="contact_info">Información de Contacto</string>
+    <string name="next">Siguiente</string>
 
 
 

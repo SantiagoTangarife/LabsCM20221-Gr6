@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Labs20221-Gr6</string>
-<<<<<<< HEAD
 
     <!-- Contact Info Activity -->
     <string name="telephone">Teléfono</string>
@@ -74,7 +73,7 @@
         <item>Puerto Carreño</item>
         <item>Bogotá</item>
     </string-array>
-=======
+
     <string name="Titulo">Informacion Personal</string>
     <string name="Nombre">Nombre</string>
     <string name="Apellido">Apellido</string>
@@ -97,5 +96,4 @@
     </string-array>
 
 
->>>>>>> main
 </resources>

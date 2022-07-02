@@ -1,5 +1,6 @@
 package co.edu.udea.compumovil.labs20221_gr6
 
+import android.content.Context
 import android.util.Log
 
 private const val TAG = "ContactInfo"
@@ -11,6 +12,27 @@ class ContactInfo (
     var country: String,
     var city: String? = null
 ) {
+    val dataErrors = mutableMapOf<String, String>()
+
+    fun isValid(context: Context): Boolean {
+        var isValidData = true
+
+        if(phone.isBlank()) {
+            dataErrors["phone"] = context.getString(R.string.required_field)
+            isValidData = false;
+        }
+        if(email.isBlank()) {
+            dataErrors["email"] = context.getString(R.string.form_required_field)
+            isValidData = false;
+        }
+        if(country.isBlank()) {
+            dataErrors["country"] = context.getString(R.string.form_required_field)
+            isValidData = false;
+        }
+
+        return isValidData;
+    }
+
     // Print values
     fun logData() {
         Log.i(TAG, "========================================")
