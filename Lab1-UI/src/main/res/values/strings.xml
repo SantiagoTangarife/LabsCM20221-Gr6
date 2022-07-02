@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Labs20221-Gr6</string>
+<<<<<<< HEAD
 
     <!-- Contact Info Activity -->
     <string name="telephone">Teléfono</string>
@@ -73,4 +74,28 @@
         <item>Puerto Carreño</item>
         <item>Bogotá</item>
     </string-array>
+=======
+    <string name="Titulo">Informacion Personal</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido">Apellido</string>
+    <string name="Sexo">Sexo</string>
+    <string name="Hombre">Hombre</string>
+    <string name="Mujer">Mujer</string>
+    <string name="FechaDeNacimiento">Fecha De Nacimiento</string>
+    <string name="Siguiente">Siguiente</string>
+    <string name="Cambiar">Cambiar</string>
+
+    <string name="form_required_field">Campo Requerido</string>
+    <string name="required_field">Campo Requerido</string>
+    <string-array name="opciones">
+        <item>Grado De Escolaridad</item>
+        <item>Primaria</item>
+        <item>Secundaria</item>
+        <item>Universidad</item>
+        <item>Otro</item>
+
+    </string-array>
+
+
+>>>>>>> main
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="form_required_field">Campo Requerido</string>
+    <string name="required_field">Campo Requerido</string>
+</resources>

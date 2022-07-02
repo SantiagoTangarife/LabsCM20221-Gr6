@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Labs20221-Gr6</string>
+    <string name="Titulo">Personal Information</string>
+    <string name="Nombre">Name</string>
+    <string name="Apellido">Last Name</string>
+    <string name="Sexo">Gender</string>
+    <string name="Hombre">Man</string>
+    <string name="Mujer">Woman</string>
+    <string name="FechaDeNacimiento">Date of Birth</string>
+    <string name="Cambiar">Change</string>
+    <string name="Siguiente">Next</string>
+
+    <string name="form_required_field">Campo Requerido</string>
+    <string name="required_field">Campo Requerido</string>
+
+    <string-array name="opciones">
+        <item>School grade</item>
+        <item>Primary</item>
+        <item>Secondary</item>
+        <item>College</item>
+        <item>Other</item>
+    </string-array>
+
+
+
+</resources>
