@@ -7,7 +7,7 @@
     tools:context=".ContactDataActivity">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/title_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
@@ -16,7 +16,7 @@
         android:layout_marginBottom="@dimen/margin"
         android:text="@string/contact_info"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/editTextPhone"
+        app:layout_constraintBottom_toTopOf="@id/phone_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,13 +28,13 @@
         android:layout_marginTop="@dimen/margin"
         android:layout_marginBottom="@dimen/margin"
         android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintBottom_toTopOf="@+id/phone_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/title_text" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/phone_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
@@ -43,13 +43,13 @@
         android:layout_marginBottom="@dimen/margin"
         android:hint="@string/telephone"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@id/editTextEmail"
+        app:layout_constraintBottom_toTopOf="@id/email_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/phone_icon"
         app:layout_constraintTop_toBottomOf="@id/separator_line" />
 
     <EditText
-        android:id="@+id/editTextAddress"
+        android:id="@+id/address_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
@@ -60,12 +60,12 @@
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@id/next_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@id/autoCompleteCity"
+        app:layout_constraintStart_toEndOf="@+id/address_icon"
+        app:layout_constraintTop_toBottomOf="@id/city_text"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/email_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
@@ -74,14 +74,14 @@
         android:layout_marginBottom="@dimen/margin"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/autoCompleteCountry"
+        app:layout_constraintBottom_toTopOf="@+id/country_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@id/editTextPhone" />
+        app:layout_constraintStart_toEndOf="@+id/email_icon"
+        app:layout_constraintTop_toBottomOf="@id/phone_text" />
 
 
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteCountry"
+        android:id="@+id/country_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
@@ -92,13 +92,13 @@
         android:hint="@string/country"
         android:imeOptions="actionNext"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/autoCompleteCity"
+        app:layout_constraintBottom_toTopOf="@+id/city_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
+        app:layout_constraintStart_toEndOf="@+id/country_icon"
+        app:layout_constraintTop_toBottomOf="@id/email_text" />
 
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteCity"
+        android:id="@+id/city_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
@@ -109,10 +109,10 @@
         android:hint="@string/city"
         android:imeOptions="actionNext"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@id/editTextAddress"
+        app:layout_constraintBottom_toTopOf="@id/address_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/autoCompleteCountry" />
+        app:layout_constraintStart_toEndOf="@+id/city_icon"
+        app:layout_constraintTop_toBottomOf="@+id/country_text" />
 
 
     <Button
@@ -121,58 +121,59 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin"
         android:layout_marginEnd="@dimen/margin"
+        android:onClick="nextButton"
         android:text="@string/next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextAddress" />
+        app:layout_constraintTop_toBottomOf="@id/address_text" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/phone_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextPhone"
+        app:layout_constraintTop_toTopOf="@+id/phone_text"
         app:srcCompat="@drawable/ic_baseline_phone_24" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/email_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintBottom_toBottomOf="@+id/email_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextEmail"
+        app:layout_constraintTop_toTopOf="@+id/email_text"
         app:srcCompat="@drawable/ic_baseline_email_24" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/country_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
-        app:layout_constraintBottom_toBottomOf="@+id/autoCompleteCountry"
+        app:layout_constraintBottom_toBottomOf="@+id/country_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/autoCompleteCountry"
+        app:layout_constraintTop_toTopOf="@+id/country_text"
         app:srcCompat="@drawable/ic_earth_globe_tool_svgrepo_com" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/city_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
-        app:layout_constraintBottom_toBottomOf="@+id/autoCompleteCity"
+        app:layout_constraintBottom_toBottomOf="@+id/city_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/autoCompleteCity"
+        app:layout_constraintTop_toTopOf="@+id/city_text"
         app:srcCompat="@drawable/ic_baseline_location_city_24" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/address_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/address_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextAddress"
+        app:layout_constraintTop_toTopOf="@+id/address_text"
         app:srcCompat="@drawable/ic_sign_svgrepo_com" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

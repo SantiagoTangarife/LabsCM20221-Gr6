@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Labs20221-Gr6</string>
-<<<<<<< HEAD
 
     <!-- Contact Info Activity -->
     <string name="telephone">Teléfono</string>
@@ -10,6 +9,8 @@
     <string name="city">Ciudad</string>
     <string name="contact_info">Información de Contacto</string>
     <string name="next">Siguiente</string>
+    <string name="wrong_email">No es una dirección de correo valida</string>
+    <string name="wrong_phone">No es un número de télefono valido</string>
 
     <string-array name="latam_countries">
         <item>Argentina</item>
@@ -74,7 +75,7 @@
         <item>Puerto Carreño</item>
         <item>Bogotá</item>
     </string-array>
-=======
+
     <string name="Titulo">Informacion Personal</string>
     <string name="Nombre">Nombre</string>
     <string name="Apellido">Apellido</string>
@@ -97,5 +98,4 @@
     </string-array>
 
 
->>>>>>> main
 </resources>

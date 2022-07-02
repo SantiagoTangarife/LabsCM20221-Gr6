@@ -1,17 +1,12 @@
 package co.edu.udea.compumovil.labs20221_gr6
 
-<<<<<<< HEAD
-=======
 import android.app.DatePickerDialog
 import android.app.Dialog
->>>>>>> main
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-<<<<<<< HEAD
-import android.widget.Button
-=======
+
 import android.widget.*
 
 import androidx.fragment.app.DialogFragment
@@ -22,20 +17,13 @@ var fecha: EditText? = null
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
->>>>>>> main
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-<<<<<<< HEAD
         setContentView(R.layout.activity_main)
-
     }
 
     fun nextButton(view: View){
-        val s = "getString(R.string.next)";
-        val intent = Intent(this, ContactDataActivity::class.java);
-        startActivity(intent);
-=======
         setContentView(R.layout.personal_data_activity)
 
         iniciarSeleccion()
@@ -47,7 +35,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista)
         spinner.adapter=adaptador
 
->>>>>>> main
     }
 
     private fun iniciarSeleccion(){
@@ -80,7 +67,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
          )
 
          if(person.isValid(this)){
-             val intent:Intent=Intent(this,Pantalla2_Activity::class.java)
+             val intent:Intent=Intent(this,ContactDataActivity::class.java)
+             intent.putExtra("Person", person);
              startActivity(intent)
          } else {
              nombre.error = person.dataErrors["firstName"]

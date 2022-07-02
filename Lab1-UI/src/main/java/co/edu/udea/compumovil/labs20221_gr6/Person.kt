@@ -2,6 +2,7 @@ package co.edu.udea.compumovil.labs20221_gr6
 
 import android.content.Context
 import android.util.Log
+import java.io.Serializable
 
 private const val TAG = "Person"
 
@@ -12,7 +13,7 @@ class Person(
     var birthday: String,
     var educationLevel: EducationLevel? = null,
     var contactInfo: ContactInfo? = null
-) {
+): Serializable {
     enum class Gender(val value: String) {
         MALE("Masculino"),
         FEMALE("Femenino")
@@ -35,7 +36,7 @@ class Person(
             isValidData = false;
         }
         if(lastName.isBlank()) {
-            dataErrors["firstName"] = context.getString(R.string.form_required_field)
+            dataErrors["lastName"] = context.getString(R.string.form_required_field)
             isValidData = false;
         }
         if(birthday.isBlank()) {
