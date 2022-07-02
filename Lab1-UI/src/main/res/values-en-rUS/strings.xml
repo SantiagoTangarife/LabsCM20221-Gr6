@@ -11,6 +11,8 @@
     <string name="Cambiar">Change</string>
     <string name="Siguiente">Next</string>
 
+
+
     <string name="form_required_field">Campo Requerido</string>
     <string name="required_field">Campo Requerido</string>
 
@@ -29,6 +31,8 @@
     <string name="city">City</string>
     <string name="contact_info">Contact Information</string>
     <string name="next">Next</string>
+    <string name="wrong_email">Not a valid email address</string>
+    <string name="wrong_phone">Not a valid phone number</string>
 
 
 
