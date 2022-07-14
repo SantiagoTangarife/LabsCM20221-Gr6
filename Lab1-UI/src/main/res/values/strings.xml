@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Labs20221-Gr6</string>
-
+    <string name="S1">Arley Santiago Tangarife Velasquez\nRoy Kleyder Maestre Ruda\nJuan Camilo Morales Vanegas</string>
     <!-- Contact Info Activity -->
+    
     <string name="telephone">Teléfono</string>
     <string name="address">Dirección</string>
     <string name="email">Correo</string>
