@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
          val nombre=findViewById<EditText>(R.id.Name)
          val apellido=findViewById<EditText>(R.id.LastName)
          val nacimiento=findViewById<EditText>(R.id.etDate)
-//         val educationLevel = findViewById<Spinner>(R.id.spinnerList)
+         val educationLevel = findViewById<Spinner>(R.id.spinnerList)
 
 
          var person = Person(
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
              apellido.text.toString(),
              Person.Gender.MALE,
              nacimiento.text.toString(),
-             Person.EducationLevel.UNIVERSITARY,
+             educationLevel.selectedItem.toString(),
          )
 
          if(person.isValid(this)){

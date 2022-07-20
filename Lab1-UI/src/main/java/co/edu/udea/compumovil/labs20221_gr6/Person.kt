@@ -11,19 +11,12 @@ class Person(
     var lastName: String,
     var gender: Gender? = null,
     var birthday: String,
-    var educationLevel: EducationLevel? = null,
+    var educationLevel: String? = null,
     var contactInfo: ContactInfo? = null
 ): Serializable {
     enum class Gender(val value: String) {
         MALE("Masculino"),
         FEMALE("Femenino")
-    }
-
-    enum class EducationLevel(val value: String) {
-        PRIMARY("Primaria"),
-        SECONDARY("Secundaria"),
-        UNIVERSITARY("Universitaria"),
-        OTHER("Otro")
     }
 
     val dataErrors = mutableMapOf<String, String>()
@@ -56,7 +49,7 @@ class Person(
         }
         Log.i(TAG, "Nació el ${birthday}")
         if (educationLevel != null) {
-            Log.i(TAG, educationLevel!!.value)
+            Log.i(TAG, educationLevel.toString())
         }
         Log.i(TAG, "========================================")
         contactInfo?.logData()
